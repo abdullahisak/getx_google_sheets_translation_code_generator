@@ -11,16 +11,18 @@ void main() {
 /*
 
 1- Share spreadsheet to publicly readable
-2- Change [documentId]
-
-3- then type:
+2- Change [documentId] with your google sheet document id (the long string in the url of your google sheet)
+3- then type blow command in terminal:
 dart main.dart
 
 */
 
+const myAwesomeApp = "1QiyYML6p3TAusUX2gPClE8ZxlubsYv8x1KYCfue3xs";
+const excelDocumentId = myAwesomeApp;
+
 Future updateLocalizationFile() async {
   //the document id for your google sheet
-  String documentId = "1oS7iJ6ocrZBA53SxRfKF0CG9HAaXeKtzvsTBhgG4Zzk";
+  String documentId = excelDocumentId;
   //the sheetid of your google sheet
   String sheetId = "0";
 
